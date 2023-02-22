@@ -25,7 +25,12 @@
     </plugins>
   </build>
   <dependencies>
-  	
+  	<dependency>
+    <groupId>org.webjars.npm</groupId>
+    <artifactId>ajv</artifactId>
+    <version>5.5.2</version>
+</dependency>
+
   	<dependency>
   		<groupId>org.postgresql</groupId>
   		<artifactId>postgresql</artifactId>
