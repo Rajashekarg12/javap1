@@ -7,6 +7,21 @@
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
+	    <plugin>
+				<groupId>org.owasp</groupId>
+				<artifactId>dependency-check-maven</artifactId>
+				<version>8.1.2</version>
+				 <configuration>
+                  <formats>JSON,HTML</formats>
+              </configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
